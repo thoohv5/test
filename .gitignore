@@ -1,0 +1,9 @@
+.DS_Store
+.buildpath
+.hgignore.swp
+.project
+.orig
+.swp
+*.swp
+*.swo
+.idea/
