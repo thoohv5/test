@@ -28,6 +28,4 @@ func main() {
 
 	fmt.Println(fileInfo)
 
-	continue
-
 }
