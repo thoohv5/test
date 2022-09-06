@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
+	"path"
+	"path/filepath"
 	"time"
 )
 
@@ -17,7 +18,9 @@ func main() {
 	location, _ := time.ParseInLocation("2006-01-02 15:04:05", now, time.Local)
 	fmt.Println(location.Unix(), location.String())
 
-	strings.TrimSuffix()
-
-	strings.TrimRight()
+	var filePath = "attachment/file/filename.txt"
+	fmt.Println(filepath.Base(filePath))
+	fmt.Println(filepath.Dir(filePath))
+	fmt.Println(path.Base(filePath))
+	fmt.Println(path.Dir(filePath))
 }
